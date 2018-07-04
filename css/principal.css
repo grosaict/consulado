@@ -1,0 +1,100 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: arial, verdana, sans-serif;
+  font-size: 8pt;
+  background-color: #f4f4f4;
+}
+
+/* Global */
+.container {
+  width: 98%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Header **/
+header {
+  margin: auto;
+  background: grey;                   /* ajustar a cor correta */
+  padding-top: 5px;
+  min-height: 70px;
+  border-bottom: #e8491d 3px solid;
+}
+
+  #logoGov {
+    width: 15%;
+    float: left;
+    margin: auto;
+    background: lightgreen;           /* apagar essa linha no futuro */
+  }
+
+    #logoGov img {
+      width: 80%;
+    }
+
+  #titulo {
+    margin: auto;
+    padding: 65px 0px;
+    width: 70%;
+    float: left;
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Anton', sans-serif;
+    color: #262626;
+    background: lightblue;            /* apagar essa linha no futuro */
+  }
+
+  #pictogramas {
+    margin: 1% 0%;
+    width: 15%;
+    float: right;
+    background: lightyellow;           /* apagar essa linha no futuro */
+  }
+
+    #pictogramas img {
+      padding: 5px 60px;
+      width: 15%;
+    }
+
+  #menuPrincipal {
+    float: left;
+    width: 100%;
+    height: 55px;
+    margin: auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    background: darkgreen;              /* ajustar a cor correta */
+  }
+
+    #menuPrincipal ul {
+      margin: 0;
+      padding: 0px 0px 0px 0px;
+      list-style: none;
+      line-height: normal;
+      text-align: center;
+    }
+
+      #menuPrincipal ul li {
+        display: inline-block;
+        /* border-right: 1px solid #6F8651;
+        border-left: 1px solid #6F8651;         decidir depois de fica ou sai */
+      }
+
+      #menuPrincipal ul li a {
+        display: block;
+        letter-spacing: 1px;
+        margin: 0px 30px;
+        line-height: 55px;
+        padding: 0 20px;
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: arial, sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        color: #FFFFFF;
+        border: none;
+      }
