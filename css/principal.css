@@ -98,3 +98,13 @@ header {
         color: #FFFFFF;
         border: none;
       }
+
+    #slider {
+      background-position: top left;
+      width: 100%;
+      
+    }
+
+      #slider img {
+        width: 100%;
+      }
