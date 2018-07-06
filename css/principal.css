@@ -143,10 +143,9 @@ header {
     background: darkgreen;                      /* ############ AJUSTAR À COR CORRETA ############ */
   }
 
-    #endereco a {
+    #rodape a {
       text-decoration: none;                    /* retira o sublinhado padrão do a */
     }
-
 
     #rodape p {
       line-height: 35px;
