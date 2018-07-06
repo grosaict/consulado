@@ -1,123 +1,154 @@
-* {                                           /* padronizações da página */
+* {                                             /* padronizações da página */
   margin: 0px;
   padding: 0px;
 }
 
-body {                                        /* padronizações do body */
+body {                                          /* padronizações do body */
   font-family: arial, verdana, sans-serif;
-  font-size: 8pt;
+  font-size: 12pt;
 }
 
 .container {
-  width: 98%;                                 /* 98% da largura do body */
   margin: auto;
-  overflow: hidden;                           /* esconde a barra de rolagem */
-  background-color: grey;                     /* ############ APAGAR ESSA LINHA ############ */
+  overflow: hidden;                             /* esconde a barra de rolagem */
 }
 
 header {
-  margin-top: 5px;
   height: 150px;
-  min-width: 1028px;
-  background-color: lightgrey;                /* ############ APAGAR ESSA LINHA ############ */
+  margin: 5px 5% 5px 5%;                        /* Centralizando o header com uma margem de 5% do .container right/left e 5px top/botton*/
+  box-shadow: 0px 0px 30px rgba(48,48,48,5);    /* efeito de sombra no header (h-offset v-offset blur color) */
 }
 
   #logoGov {
-    height: 100%;                             /* 100% da atura do header */
-    width: 15%;                               /* 15% da largura do header */
-    float: left;
+    height: 100%;                               /* 100% da atura do header */
+    width: 15%;                                 /* 15% da largura do header */
+    float: left;                                /* posicionamento à esquerda à partir da margem do header */
     margin: auto;
-    background-color: lightyellow;            /* ############ APAGAR ESSA LINHA ############ */
   }
 
     #logoGov img {
-      height: 100%;                           /* 100% da altura do #logoGov */
-      margin-left: 25%;
-      background-color: white;                /* ############ APAGAR ESSA LINHA ############ */
+      width: 66%;                               /* 66% da largura do #logoGov (sobram 34%) */
+      min-width: 60px;                          /* largura mínima aceitável */
+      margin: auto 17%;                         /* 17% da largura do #logoGov, utilizando os 34% que sobraram para centralizar (2 x 17) */
     }
 
   #titulo {
-    height: 100%;                             /* 100% da largura do header */
-    width: 70%;                               /* 70% da largura do header */
-    float: left;
-    background-color: lightblue;              /* ############ APAGAR ESSA LINHA ############ */
+    height: 100%;                               /* 100% da atura do header */       
+    width: 63%;                                 /* 63% da largura do header */
+    float: left;                                /* posicionamento à esquerda à partir de #logoGov */
   }
 
     #titulo h1 {
-      text-align: center;
-      margin: 5% auto;
-      font-family: 'Anton', sans-serif;
+      text-align: left;
+      font-family: Oswald, sans-serif;          /* fonte utilizada em https://br.usembassy.gov/pt/ */
+      font-size: 1.4em;                         /* 140% do tamanho da fonte padrão */
+      font-weight: 800;                         /* largura da letra */
+      letter-spacing: 2px;                      /* espaçamento entre letras */
+      text-transform: uppercase;                /* garante sempre maiúsculas */
+    }
+
+    #titulo h1:first-child {
+      margin-top: 40px;                         /* margem top somente no primero h1 */
     }
 
   #pictogramas {
-    margin: 1% 0%;
-    width: 15%;
-    float: right;
+    height: 100%;                               /* 100% da atura do header */
+    width: 10%;                                 /* 10% da largura do header */
+    float: left;
   }
 
-    #pictogramas img {
-      padding: 5px 60px;
-      width: 15%;
+    #picgroup {
+      margin-top: 10%;
+    }
+
+    #picgroup img {
+      width: 22%;                               /* 26% da largura do #pictogramas (sobram 74%) */
+      min-width: 10px;                          /* largura mínima aceitável */
+      margin: 3px 40%;                           /* 37% da largura do #pictogramas, utilizando os 74% que sobraram para centralizar (2 x 17) */
+    }
+
+  #endereco {
+    height: 100%;                               /* 100% da atura do header */
+    width: 12%;                                 /* 15% da largura do header */
+    float: right;
+   }
+
+    #endereco img {
+      width: 15%;                               /* 15% da largura do #endereco (sobram 85%) */
+      min-width: 10px;                          /* largura mínima aceitável */
+      margin-top: 2px;
+      margin-left: 82%;                         /* utiliza os 85% que sobraram menos 3% como margem à direita */
+    }
+
+    #endereco a {
+      text-decoration: none;                    /* retira o sublinhado padrão do a */
+      color: black;                             /* troca a cor azul padrão do a */
+    }
+
+    #endereco p {
+      text-align: right;
+      margin-right: 6%;
+      font-family: Oswald, sans-serif;          /* fonte utilizada em https://br.usembassy.gov/pt/ */
+      font-size: 0.9em;                         /* 90% do tamanho da fonte padrão */
+      font-weight: 500;
     }
 
   #menuPrincipal {
+    height: 45px;
     float: left;
-    width: 100%;                              /* 100% da largura do container */
-    height: 55px;
-    font-family: 'Source Sans Pro', sans-serif;
-    background-color: darkgreen;              /* ############ AJUSTAR A COR CORRETA ############ */
+    width: 100%;                                /* 100% da largura do container */
+    font-family: 'Source Sans Pro', sans-serif; /* fonte utilizada pelo Google */
+    background-color: darkgreen;                /* ############ AJUSTAR À COR CORRETA ############ */
   }
 
     #menuPrincipal ul {
-      text-align: center;                     /* Centraliza todo o nav */
+      margin: 5px 0px;                          /* 5px top/botton */
+      text-align: center;                       /* centraliza todo o nav */
     }
 
       #menuPrincipal ul li {
-        display: inline-block;                /* altera exibição da lista de coluna para linha */
-        border-right: 1px solid grey;      /* insere uma linha à direita de cada li */
+        line-height: 35px;                      /* altura da linha */
+        display: inline-block;                  /* altera exibição da lista, de coluna para linha */
+        border-right: 1px solid grey;           /* insere uma linha à direita de cada li */
       }
 
-        #menuPrincipal ul li:first-child {
-          border-left: 1px solid grey;        /* insere uma linha à esquerda na primeira li */
+      #menuPrincipal ul li:first-child {
+        border-left: 1px solid grey;            /* insere uma linha à esquerda na primeira li */
+      }
+
+        #menuPrincipal ul li a {
+          margin: 5px 60px;                     /* margem de 5px top/botton e 30px right/left em cada a */
+          font-size: 1em;
+          letter-spacing: 3px;                  /* espaçamento entre caracteres */
+          text-decoration: none;
+          text-align: center;
+          text-transform: uppercase;
+          color: #FFFFFF;
         }
 
-
-      #menuPrincipal ul li a {
-        letter-spacing: 3px;                  /* espaçamento entre caracteres */
-        margin: 0px 30px;                     /* margem de 30px direita e esquerda em cada a */
-        line-height: 45px;
-        padding: 0 20px;
-        text-decoration: none;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 14px;
-        font-weight: normal;
-        color: #FFFFFF;
-      }
-
   #slider {
+    height: 420px;                              /* ############ AJUSTAR AO TAMANHO FINAL ############ */
+    width: 100%;                                /* 100% da largura do container */
     float: left;
-    background: url(img/pordosol.png);
-    width: 100%;
+    background: url(../imgs/img02-slider-pordosol_689x190.png);
+    background-size: 100%;                      /* ajusta a imagem à largura do #slider */
+    background-repeat: no-repeat;               /* exibe a imagem apenas uma vez, porém não tem efeito por estar ocupando a largura total*/
+    background-color: lightgrey;                /* ############ APAGAR ############ */
   }
 
-#footer {
-  float: left;
-  height: 150px;
-  margin: 0 auto;
-  padding: 0px 0 15px 0;
-  background: darkgreen;
-  border-top: 1px solid #A59282;
-  font-family: arial, sans-serif;
-}
-
-  #footer p {
-    margin: 0;
-    padding-top: 40px;
-    line-height: normal;
-    font-size: 12px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-align: center;
-    color: #FFFFFF;
+  #rodape {
+    height: 45px;
+    width: 100%;                                /* 100% da largura do container */
+    float: left;
+    background: darkgreen;                      /* ############ AJUSTAR À COR CORRETA ############ */
   }
+
+    #rodape p {
+      line-height: 35px;
+      margin: 5px 5px;
+      font-size: 0.6em;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-align: right;
+      color: white;
+    }
