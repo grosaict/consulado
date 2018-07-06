@@ -1,58 +1,58 @@
-* {
+* {                                           /* padronizações da página */
   margin: 0px;
   padding: 0px;
 }
 
-body {
+body {                                        /* padronizações do body */
   font-family: arial, verdana, sans-serif;
   font-size: 8pt;
-  background-color: #f4f4f4;
 }
 
-/* Global */
 .container {
-  width: 98%;
+  width: 98%;                                 /* 98% da largura do body */
   margin: auto;
-  overflow: hidden;
+  overflow: hidden;                           /* esconde a barra de rolagem */
+  background-color: grey;                     /* ############ APAGAR ESSA LINHA ############ */
 }
 
-/* Header **/
 header {
-  margin: auto;
-  background: grey;                   /* ajustar a cor correta */
-  padding-top: 5px;
-  min-height: 70px;
-  border-bottom: #e8491d 3px solid;
+  margin-top: 5px;
+  height: 150px;
+  min-width: 1028px;
+  background-color: lightgrey;                /* ############ APAGAR ESSA LINHA ############ */
 }
 
   #logoGov {
-    width: 15%;
+    height: 100%;                             /* 100% da atura do header */
+    width: 15%;                               /* 15% da largura do header */
     float: left;
     margin: auto;
-    background: lightgreen;           /* apagar essa linha no futuro */
+    background-color: lightyellow;            /* ############ APAGAR ESSA LINHA ############ */
   }
 
     #logoGov img {
-      width: 80%;
+      height: 100%;                           /* 100% da altura do #logoGov */
+      margin-left: 25%;
+      background-color: white;                /* ############ APAGAR ESSA LINHA ############ */
     }
 
   #titulo {
-    margin: auto;
-    padding: 65px 0px;
-    width: 70%;
+    height: 100%;                             /* 100% da largura do header */
+    width: 70%;                               /* 70% da largura do header */
     float: left;
-    text-align: center;
-    font-size: 150%;
-    font-family: 'Anton', sans-serif;
-    color: #262626;
-    background: lightblue;            /* apagar essa linha no futuro */
+    background-color: lightblue;              /* ############ APAGAR ESSA LINHA ############ */
   }
+
+    #titulo h1 {
+      text-align: center;
+      margin: 5% auto;
+      font-family: 'Anton', sans-serif;
+    }
 
   #pictogramas {
     margin: 1% 0%;
     width: 15%;
     float: right;
-    background: lightyellow;           /* apagar essa linha no futuro */
   }
 
     #pictogramas img {
@@ -62,49 +62,62 @@ header {
 
   #menuPrincipal {
     float: left;
-    width: 100%;
+    width: 100%;                              /* 100% da largura do container */
     height: 55px;
-    margin: auto;
     font-family: 'Source Sans Pro', sans-serif;
-    background: darkgreen;              /* ajustar a cor correta */
+    background-color: darkgreen;              /* ############ AJUSTAR A COR CORRETA ############ */
   }
 
     #menuPrincipal ul {
-      margin: 0;
-      padding: 0px 0px 0px 0px;
-      list-style: none;
-      line-height: normal;
-      text-align: center;
+      text-align: center;                     /* Centraliza todo o nav */
     }
 
       #menuPrincipal ul li {
-        display: inline-block;
-        /* border-right: 1px solid #6F8651;
-        border-left: 1px solid #6F8651;         decidir depois de fica ou sai */
+        display: inline-block;                /* altera exibição da lista de coluna para linha */
+        border-right: 1px solid grey;      /* insere uma linha à direita de cada li */
       }
 
+        #menuPrincipal ul li:first-child {
+          border-left: 1px solid grey;        /* insere uma linha à esquerda na primeira li */
+        }
+
+
       #menuPrincipal ul li a {
-        display: block;
-        letter-spacing: 1px;
-        margin: 0px 30px;
-        line-height: 55px;
+        letter-spacing: 3px;                  /* espaçamento entre caracteres */
+        margin: 0px 30px;                     /* margem de 30px direita e esquerda em cada a */
+        line-height: 45px;
         padding: 0 20px;
         text-decoration: none;
         text-align: center;
         text-transform: uppercase;
-        font-family: arial, sans-serif;
         font-size: 14px;
         font-weight: normal;
         color: #FFFFFF;
-        border: none;
       }
 
-    #slider {
-      background-position: top left;
-      width: 100%;
-      
-    }
+  #slider {
+    float: left;
+    background: url(img/pordosol.png);
+    width: 100%;
+  }
 
-      #slider img {
-        width: 100%;
-      }
+#footer {
+  float: left;
+  height: 150px;
+  margin: 0 auto;
+  padding: 0px 0 15px 0;
+  background: darkgreen;
+  border-top: 1px solid #A59282;
+  font-family: arial, sans-serif;
+}
+
+  #footer p {
+    margin: 0;
+    padding-top: 40px;
+    line-height: normal;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+  }
