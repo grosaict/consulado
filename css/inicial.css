@@ -18,7 +18,7 @@ body {                                          /* padronizações do body */
   font-size: 10pt;
 }
 
-.container {
+.mainContainer {
   height: 900px;
   width: 1200px;
   margin: auto auto 3px auto;                   /* mantém centralizado com o auto e insere 3px no botton */
@@ -26,8 +26,8 @@ body {                                          /* padronizações do body */
 }
 
 header {
-  height: 15%;                                  /* 15% da atura do .container */
-  margin: 5px 2% 5px 2%;                               /* header centralizado com 96% do tamanho do .container */
+  height: 15%;                                  /* 15% da atura do .mainContainer */
+  margin: 5px 2% 5px 2%;                        /* header centralizado com 96% do tamanho do .mainContainer */
   box-shadow: 0px 0px 30px rgba(0,20,0,5);      /* efeito de sombra no header (h-offset v-offset blur color / #001400 é uma variação do verde oficial) */
 }
 
@@ -92,7 +92,7 @@ header {
     #endereco p {
       text-align: right;
       margin-right: 6%;
-      font-family: Oswald, sans-serif;          /* fonte utilizada em https://br.usembassy.gov/pt/ */
+      font-family: Oswald, sans-serif;          /* fonte com aparência institucional utilizada em https://br.usembassy.gov/pt/ */
       font-size: 0.9em;                         /* 90% do tamanho da fonte padrão */
       font-weight: 500;
     }
@@ -108,8 +108,8 @@ header {
     }
 
 #menuPrincipal {
-  height: 5%;                                   /* 5% da atura do .container */
-  width: 100%;                                  /* 100% da largura do .container */
+  height: 5%;                                   /* 5% da atura do .mainContainer */
+  width: 100%;                                  /* 100% da largura do .mainContainer */
   float: left;
   background-color: #006600;                    /* verde oficial da bandeira portuguesa (vide topo do documento) */
 }
@@ -140,23 +140,23 @@ header {
       }
 
 #slider {
-  height: 60%;                                  /* 60% da atura do .container */
+  height: 60%;                                  /* 60% da atura do .mainContainer */
   width: 100%;                                  /* 100% da largura do container */
   float: left;
-  background: url(../imgs/img02-slider-pordosol_680x306.png);
-  background-size: cover;                       /* o atributo cover preenche o #slider (CUIDADO PARA NÃO DISTORCER A IMAGEM) */
+  /* background: url(../imgs/img02-slider-pordosol_680x306.png);
+  background-size: cover;                       /* o atributo cover preenche o #slider (CUIDADO PARA NÃO DISTORCER A IMAGEM) 
   background-repeat: no-repeat;                 /* exibe a imagem apenas uma vez, porém não tem efeito por estar ocupando a largura total */
 }
 
 #carousel {
-  height: 14%;                                  /* 15% da atura do .container */
+  height: 14%;                                  /* 15% da atura do .mainContainer */
   width: 100%;                                  /* 100% da largura do container */
   float: left;
 background-color: lightblue;           /* ############ APAGAR ESSA LINHA ############ */
 }
 
 #rodape {
-  height: 5%;                                   /* 5% da atura do .container */
+  height: 5%;                                   /* 5% da atura do .mainContainer */
   width: 100%;                                  /* 100% da largura do container */
   float: left;
   background-color: #006600;                    /* verde oficial da bandeira portuguesa (vide topo do documento) */
