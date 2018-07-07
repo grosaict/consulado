@@ -15,7 +15,7 @@ body {                                          /* padronizações do body */
 
 header {
   height: 150px;
-  margin: 5px 5% 5px 5%;                        /* Centralizando o header com uma margem de 5% do .container right/left e 5px top/botton*/
+  margin: 5px 5% 5px 5%;                        /* Header centraizado com 90% do tamanho do .container */
   box-shadow: 0px 0px 30px rgba(48,48,48,5);    /* efeito de sombra no header (h-offset v-offset blur color) */
 }
 
