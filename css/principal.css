@@ -1,22 +1,34 @@
+/*  ############    CORES BANDEIRA PORTUGUESA    ############
+    https://pt.wikipedia.org/wiki/Bandeira_de_Portugal
+
+    Sistema Vermelho      Verde           Amarelo     Azul            Branco        Preto
+    PMS     485 CVC       349 CVC         803 CVC     288 CVC         —             Black 6 CVC
+    RGB     255-0-0       0-102-0         255-255-0   0-51-153        255-255-255   0-0-0
+    CMYK    0-100-100-0   100-35-100-30   0-0-100-0   100-100-25-10   0-0-0-0       0-0-0-100
+    Web     #FF0000       #006600         #FFFF00     #003399         #FFFFFF       #000000 */
+
+
 * {                                             /* padronizações da página */
   margin: 0px;
   padding: 0px;
 }
 
 body {                                          /* padronizações do body */
-  font-family: arial, verdana, sans-serif;
-  font-size: 12pt;
+  font-family: 'Source Sans Pro', sans-serif;   /* fonte minimalista utilizada pela Google */
+  font-size: 10pt;
 }
 
 .container {
-  margin: auto;
+  height: 900px;
+  width: 1200px;
+  margin: auto auto 3px auto;                   /* mantém centralizado com o auto e insere 3px no botton */
   overflow: hidden;                             /* esconde a barra de rolagem */
 }
 
 header {
-  height: 150px;
-  margin: 5px 5% 5px 5%;                        /* Header centraizado com 90% do tamanho do .container */
-  box-shadow: 0px 0px 30px rgba(48,48,48,5);    /* efeito de sombra no header (h-offset v-offset blur color) */
+  height: 15%;                                  /* 15% da atura do .container */
+  margin: 5px 2% 5px 2%;                               /* header centralizado com 96% do tamanho do .container */
+  box-shadow: 0px 0px 30px rgba(0,20,0,5);      /* efeito de sombra no header (h-offset v-offset blur color / #001400 é uma variação do verde oficial) */
 }
 
   #logoGov {
@@ -27,44 +39,43 @@ header {
   }
 
     #logoGov img {
-      width: 66%;                               /* 66% da largura do #logoGov (sobram 34%) */
-      min-width: 60px;                          /* largura mínima aceitável */
-      margin: auto 17%;                         /* 17% da largura do #logoGov, utilizando os 34% que sobraram para centralizar (2 x 17) */
+      width: 80%;                               /* 80% da largura do #logoGov (sobram 20%) */
+      margin: auto 10%;                         /* 10% da largura do #logoGov, utilizando os 20% que sobraram para centralizar (2 x 10) */
     }
 
   #titulo {
     height: 100%;                               /* 100% da atura do header */       
-    width: 63%;                                 /* 63% da largura do header */
+    width: 70%;                                 /* 70% da largura do header */
     float: left;                                /* posicionamento à esquerda à partir de #logoGov */
   }
 
     #titulo h1 {
       text-align: left;
-      font-family: Oswald, sans-serif;          /* fonte utilizada em https://br.usembassy.gov/pt/ */
+      font-family: Oswald, sans-serif;          /* fonte com aparência institucional utilizada em https://br.usembassy.gov/pt/ */
       font-size: 1.4em;                         /* 140% do tamanho da fonte padrão */
-      font-weight: 800;                         /* largura da letra */
-      letter-spacing: 2px;                      /* espaçamento entre letras */
+      font-weight: 800;                         /* expessura da letra */
+      letter-spacing: 3px;                      /* espaçamento entre letras */
+      word-spacing: 10px;                       /* espaçamento entre palavras */
       text-transform: uppercase;                /* garante sempre maiúsculas */
     }
 
     #titulo h1:first-child {
-      margin-top: 40px;                         /* margem top somente no primero h1 */
+      margin-top: 5%;                           /* margem top somente no primero h1 */
     }
 
   #pictogramas {
     height: 100%;                               /* 100% da atura do header */
-    width: 10%;                                 /* 10% da largura do header */
+    width: 3%;                                  /* 3% da largura do header */
     float: left;
   }
 
     #picgroup {
-      margin-top: 10%;
+      margin-top: 50%;                          /* margem superior aplicada no conjunto dos pictogramas */
     }
 
     #picgroup img {
-      width: 22%;                               /* 26% da largura do #pictogramas (sobram 74%) */
-      min-width: 10px;                          /* largura mínima aceitável */
-      margin: 3px 40%;                           /* 37% da largura do #pictogramas, utilizando os 74% que sobraram para centralizar (2 x 17) */
+      width: 68%;                               /* 68% da largura do #pictogramas (sobram 32%) */
+      margin: 3px 16%;                          /* 16% da largura do #pictogramas, utilizando os 32% que sobraram para centralizar (2 x 16) */
     }
 
   #endereco {
@@ -72,13 +83,6 @@ header {
     width: 12%;                                 /* 15% da largura do header */
     float: right;
    }
-
-    #endereco img {
-      width: 15%;                               /* 15% da largura do #endereco (sobram 85%) */
-      min-width: 10px;                          /* largura mínima aceitável */
-      margin-top: 2px;
-      margin-left: 82%;                         /* utiliza os 85% que sobraram menos 3% como margem à direita */
-    }
 
     #endereco a {
       text-decoration: none;                    /* retira o sublinhado padrão do a */
@@ -93,66 +97,81 @@ header {
       font-weight: 500;
     }
 
-  #menuPrincipal {
-    height: 45px;
-    float: left;
-    width: 100%;                                /* 100% da largura do container */
-    font-family: 'Source Sans Pro', sans-serif; /* fonte utilizada pelo Google */
-    background-color: darkgreen;                /* ############ AJUSTAR À COR CORRETA ############ */
-  }
-
-    #menuPrincipal ul {
-      margin: 5px 0px;                          /* 5px top/botton */
-      text-align: center;                       /* centraliza todo o nav */
+    #endereco p:first-child {
+      margin-top: 10%;
     }
 
-      #menuPrincipal ul li {
-        line-height: 35px;                      /* altura da linha */
-        display: inline-block;                  /* altera exibição da lista, de coluna para linha */
-        border-right: 1px solid grey;           /* insere uma linha à direita de cada li */
+    #endereco img {
+      width: 18%;                               /* 18% da largura do #endereco */
+      margin-top: 8%;
+      margin-left: 68%;
+    }
+
+#menuPrincipal {
+  height: 5%;                                   /* 5% da atura do .container */
+  width: 100%;                                  /* 100% da largura do .container */
+  float: left;
+  background-color: #006600;                    /* verde oficial da bandeira portuguesa (vide topo do documento) */
+}
+
+  #menuPrincipal ul {
+    margin: 5px 0px;                            /* 5px top/botton */
+    text-align: center;                         /* centraliza todo o nav */
+  }
+
+    #menuPrincipal ul li {
+      line-height: 35px;                        /* altura da linha */
+      display: inline-block;                    /* altera exibição da lista, de coluna para linha */
+      border-right: 1px solid grey;             /* insere uma linha à direita de cada li */
+    }
+
+    #menuPrincipal ul li:first-child {
+      border-left: 1px solid grey;              /* insere uma linha à esquerda na primeira li */
+    }
+
+      #menuPrincipal ul li a {
+        margin: 5px 60px;                       /* margem de 5px top/botton e 30px right/left em cada a */
+        font-size: 1em;
+        letter-spacing: 3px;                    /* espaçamento entre caracteres */
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
       }
 
-      #menuPrincipal ul li:first-child {
-        border-left: 1px solid grey;            /* insere uma linha à esquerda na primeira li */
-      }
+#slider {
+  height: 60%;                                  /* 60% da atura do .container */
+  width: 100%;                                  /* 100% da largura do container */
+  float: left;
+  background: url(../imgs/img02-slider-pordosol_680x306.png);
+  background-size: cover;                       /* o atributo cover preenche o #slider (CUIDADO PARA NÃO DISTORCER A IMAGEM) */
+  background-repeat: no-repeat;                 /* exibe a imagem apenas uma vez, porém não tem efeito por estar ocupando a largura total */
+}
 
-        #menuPrincipal ul li a {
-          margin: 5px 60px;                     /* margem de 5px top/botton e 30px right/left em cada a */
-          font-size: 1em;
-          letter-spacing: 3px;                  /* espaçamento entre caracteres */
-          text-decoration: none;
-          text-align: center;
-          text-transform: uppercase;
-          color: #FFFFFF;
-        }
+#carousel {
+  height: 14%;                                  /* 15% da atura do .container */
+  width: 100%;                                  /* 100% da largura do container */
+  float: left;
+background-color: lightblue;           /* ############ APAGAR ESSA LINHA ############ */
+}
 
-  #slider {
-    height: 420px;                              /* ############ AJUSTAR AO TAMANHO FINAL ############ */
-    width: 100%;                                /* 100% da largura do container */
-    float: left;
-    background: url(../imgs/img02-slider-pordosol_689x190.png);
-    background-size: 100%;                      /* ajusta a imagem à largura do #slider */
-    background-repeat: no-repeat;               /* exibe a imagem apenas uma vez, porém não tem efeito por estar ocupando a largura total*/
-    background-color: lightgrey;                /* ############ APAGAR ############ */
+#rodape {
+  height: 5%;                                   /* 5% da atura do .container */
+  width: 100%;                                  /* 100% da largura do container */
+  float: left;
+  background-color: #006600;                    /* verde oficial da bandeira portuguesa (vide topo do documento) */
+}
+
+  #rodape a {
+    text-decoration: none;                      /* retira o sublinhado padrão do a */
   }
 
-  #rodape {
-    height: 45px;
-    width: 100%;                                /* 100% da largura do container */
-    float: left;
-    background: darkgreen;                      /* ############ AJUSTAR À COR CORRETA ############ */
+  #rodape p {
+    line-height: 35px;
+    margin: 0.5% 5px;
+    font-size: 0.7em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: right;
+    color: white;
   }
-
-    #rodape a {
-      text-decoration: none;                    /* retira o sublinhado padrão do a */
-    }
-
-    #rodape p {
-      line-height: 35px;
-      margin: 5px 5px;
-      font-size: 0.6em;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      text-align: right;
-      color: white;
-    }
