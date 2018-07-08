@@ -12,28 +12,27 @@
 <!-- Stylesheets -->
 	<!-- Página inicial -->
 	<link rel="stylesheet" type="text/css" href="css/inicial.css"/>
+	<!-- jQuery -->
+  	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css"/>				<!-- não está sendo usado -->
 	<!-- Slider -->
   	<link rel="stylesheet" type="text/css" href="css/immersive-slider.css"/>
-	<!-- Carousel Owl Stylesheets -->
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css"/>
+	<!-- Carousel Sly -->
+    <link rel="stylesheet" type="text/css" href="css/sly.css"/>
 
 <!-- Fontes disponíveis no Google -->
 	<!-- Source Sans Pro (minimalista utilizada pela própria Google / ex: app maps) -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro"/>
 	<!-- Oswald (aparência institucional utilizada em https://br.usembassy.gov/pt/) -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald"/>
-  	<!-- Carousel -->
-    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,300italic'/>
 
 <!-- Scripts -->
-	<!-- jQuery atualizado -->
-	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<!-- jQuery 3.3.1 -->
+	<script type="text/javascript" src="js/jquery/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery/jquery-ui.min.js"></script>			<!-- não está sendo usado -->
 	<!-- Slider -->
   	<script type="text/javascript" src="js/jquery.immersive-slider.js"></script>
-  	<!-- Carousel -->
-  	<script type="text/javascript" src="js/owlcarousel/owl.carousel.min.js"></script>
-	<script type="text/javascript" src="js/owlcarousel/highlight.js"></script>
-	<script type="text/javascript" src="js/owlcarousel/app.js"></script>
+	<!-- Carousel Sly -->
+    <script type="text/javascript" src="js/sly.js"/></script>
 
 </head>
 <body>
@@ -50,11 +49,11 @@
 		<div id="pictogramas">
 			<div id="picgroup">
 				<a href="https://www.facebook.com/vcportugalpoa/" target="_blank">
-					<img src="imgs/pic01-contact-facebook.png" alt="pic01-contact-facebook.png" title="@vcportugalpoa"></a>
-				<a href="#" target="_blank">
-					<img src="imgs/pic02-contact-phone.png" alt="pic02-contact-phone.png" title="telefone"></a>
-				<a href="#" target="_blank">
-					<img src="imgs/pic03-contact-mail.png" alt="pic03-contact-mail.png" title="e-mail"></a>
+					<img src="imgs/pic01-contact-facebook.png" alt="pic01-contact-facebook.png"/></a>
+				<a href="#">
+					<img src="imgs/pic02-contact-phone.png" alt="pic02-contact-phone.png"/></a>
+				<a href="#">
+					<img src="imgs/pic03-contact-mail.png" alt="pic03-contact-mail.png"/></a>
 			</div>
 		</div>
 		<div id="endereco">
@@ -63,7 +62,7 @@
 				<p>10º andar - Centro</p>
 				<p>Porto Alegre/RS</p>
 				<p>90.020-090</p>
-				<img src="imgs/pic04-placeholder.png" alt="pic04-placeholder.png">
+				<img src="imgs/pic04-placeholder.png" alt="pic04-placeholder.png"/>
 			</a>
 		</div>
 	</header>
@@ -80,103 +79,87 @@
 		</ul>
 	</nav>
 	<section id="carousel">
-      	<div class="owl-carousel">
-            <div class="item">
-              	<a href="https://www.consuladoportugalportoalegre.com/servicos-consulares">
-              		<h2>Inscrição Consular</h2></a>
-            </div>
-            <div class="item">
-              	<a href="https://www.consuladoportugalportoalegre.com/servicos-consulares">
-              		<h2>Nacionalidade</h2></a>
-            </div>
-            <div class="item">
-              	<a href="https://www.consuladoportugalportoalegre.com/servicos-consulares">
-              		<h2>Cartão Cidadão</h2></a>
-            </div>
-            <div class="item">
-              	<a href="https://www.consuladoportugalportoalegre.com/servicos-consulares">
-              		<h2>Passaporte</h2></a>
-            </div>
-            <div class="item">
-              	<a href="https://www.consuladoportugalportoalegre.com/servicos-consulares">
-              		<h2>Casamento</h2></a>
-            </div>
-            <div class="item">
-              	<a href="https://www.consuladoportugalportoalegre.com/servicos-consulares">
-              		<h2>Óbito</h2></a>
-            </div>
-            <div class="item">
-              	<a href="https://www.consuladoportugalportoalegre.com/servicos-consulares">
-              		<h2>Legalização de Documentos</h2></a>
-            </div>
-            <div class="item">
-              	<a href="https://www.consuladoportugalportoalegre.com/servicos-consulares">
-              		<h2>Reconhecimento de Assinaturas</h2></a>
-            </div>
-            <div class="item">
-              	<a href="https://www.consuladoportugalportoalegre.com/servicos-consulares">
-              		<h2>Procurações</h2></a>
-            </div>
-            <div class="item">
-              	<a href="https://www.consuladoportugalportoalegre.com/servicos-consulares">
-              		<h2>Testamentos</h2></a>
-            </div>
-            <div class="item">
-              	<a href="https://www.consuladoportugalportoalegre.com/servicos-consulares">
-              		<h2>Habilitação de Herdeiros</h2></a>
-            </div>
-            <div class="item">
-              	<a href="https://www.consuladoportugalportoalegre.com/servicos-consulares">
-              		<h2>Identificação Fiscal (NIF)</h2></a>
-            </div>
-            <div class="item">
-              	<a href="https://www.consuladoportugalportoalegre.com/servicos-consulares">
-              		<h2>Igualdade de Direitos</h2></a>
-            </div>
-            <div class="item">
-              	<a href="https://www.consuladoportugalportoalegre.com/servicos-consulares">
-              		<h2>Certificado de Bagagem</h2></a>
-            </div>
-            <div class="item">
-              	<a href="https://www.consuladoportugalportoalegre.com/servicos-consulares">
-              		<h2>Certificado de Residência</h2></a>
-            </div>
-            <div class="item">
-              	<a href="https://www.consuladoportugalportoalegre.com/servicos-consulares">
-              		<h2>Certificado de Importação de Automóvel</h2></a>
-             </div>
-            <div class="item">
-              	<a href="https://www.consuladoportugalportoalegre.com/servicos-consulares">
-              		<h2>Habilitação de Condução</h2></a>
-            </div>
-            <div class="item">
-              	<a href="https://www.consuladoportugalportoalegre.com/servicos-consulares">
-              		<h2>Receseamento Eleitoral</h2></a>
-            </div>
-            <div class="item">
-              	<a href="https://www.consuladoportugalportoalegre.com/servicos-consulares">
-              		<h2>Registo Criminal</h2></a>
-            </div>
-            <div class="item">
-              	<a href="https://www.consuladoportugalportoalegre.com/servicos-consulares">
-              		<h2>Serviço Militar</h2></a>
-            </div>
-            <div class="item">
-              	<a href="https://www.consuladoportugalportoalegre.com/servicos-consulares">
-              		<h2>Vistos</h2></a>
-            </div>
-      	</div>
-	    <script>
-	    	$(document).ready(function(){
-		      $('.owl-carousel').owlCarousel({
-		        margin: 10, loop: true, responsive: {
-		          0: 	{ items: 1 },
-		          600: 	{ items: 2 },
-		          1000: { items: 3 }
-		        }
-		      })
-			});	
-	    </script>
+		<div class="frame">
+		  <ul class="slidee">
+		    <li><div style="text-align:center">
+		    	<a href="https://www.consuladoportugalportoalegre.com/servicos-consulares">
+		    	<img src="imgs/servicos/inscrica_consular_128_green.png" alt="inscrica_consular_128_green.png"/>
+		    	<br/><h3>Inscrição Consular</h3></a>
+		    </div></li>
+		    <li><div style="text-align:center">
+		    	<a href="https://www.consuladoportugalportoalegre.com/servicos-consulares">
+		    	<img src="imgs/servicos/cartao_cidadao_128_green.png" alt="cartao_cidadao_128_green.png"/>
+		    	<br/><h3>Cartão Cidadão</h3></a>
+		    </div></li>
+		    <li><div style="text-align:center">
+		    	<a href="https://www.consuladoportugalportoalegre.com/servicos-consulares">
+		    	<img src="imgs/servicos/passaporte_128_green.png" alt="passaporte_128_green.png"/>
+		    	<br/><h3>Passaporte</h3></a>
+		    </div></li>
+		    <li><div style="text-align:center">
+		    	<a href="https://www.consuladoportugalportoalegre.com/servicos-consulares">
+		    	<img src="imgs/servicos/reg_civil_nasc_bird_128_green.png" alt="reg_civil_nasc_bird_128_green.png"/>
+		    	<br/><h3>Registo Civil: Nascimento</h3></a>
+		    </div></li>
+		    <li><div style="text-align:center">
+		    	<a href="https://www.consuladoportugalportoalegre.com/servicos-consulares">
+		    	<img src="imgs/servicos/reg_civil_casamento_car_128_green.png" alt="reg_civil_casamento_car_128_green.png"/>
+		    	<br/><h3>Registo Civil: Casamento</h3></a>
+		    </div></li>
+		    <li><div style="text-align:center">
+		    	<a href="https://www.consuladoportugalportoalegre.com/servicos-consulares">
+		    	<img src="imgs/servicos/reg_civil_casamento_certidao_128_green.png" alt="reg_civil_casamento_certidao_128_green.png"/>
+		    	<br/><h3>Registo Civil: Casamento</h3></a>
+		    </div></li>
+		    <li><div style="text-align:center">
+		    	<a href="https://www.consuladoportugalportoalegre.com/servicos-consulares">
+		    	<img src="imgs/servicos/reg_civil_casamento_pigeon_128_green.png" alt="reg_civil_casamento_pigeon_128_green.png"/>
+		    	<br/><h3>Registo Civil: Casamento</h3></a>
+		    </div></li>
+		    <li><div style="text-align:center">
+		    	<a href="https://www.consuladoportugalportoalegre.com/servicos-consulares">
+		    	<img src="imgs/servicos/reg_civil_obito_heart_128_green.png" alt="reg_civil_obito_heart_128_green.png"/>
+		    	<br/><h3>Registo Civil: Óbito</h3></a>
+		    </div></li>
+		    <li><div style="text-align:center">
+		    	<a href="https://www.consuladoportugalportoalegre.com/servicos-consulares">
+		    	<img src="imgs/servicos/reg_civil_obito_heaven_128_green.png" alt="reg_civil_obito_heaven_128_green.png"/>
+		    	<br/><h3>Registo Civil: Óbito</h3></a>
+		    </div></li>
+		  </ul>
+		</div>
+		<div class="scrollbar">
+		    <div class="handle"></div>
+		</div>
+		<script>
+			var slyelement = {
+			  obj: {},
+			  el: '.frame',
+			  options: {
+			    horizontal: 1,
+			    itemNav: 'forceCentered',
+			    smart: 1,
+			    activateMiddle: 1,
+			    activateOn: 'click',
+			    mouseDragging: 1,
+			    touchDragging: 1,
+			    releaseSwing: 1,
+			    startAt: 2,				// dado original 0
+			    scrollBy: 1,
+			    speed: 300,
+			    elasticBounds: 1,
+			    easing: 'swing', 		// easeInOutElastic, easeOutBounce
+			    scrollBar: $('.scrollbar')
+			  }
+			};
+			$(function(){
+			  slyelement.obj = new Sly($(slyelement.el), slyelement.options);
+			  slyelement.obj.init();
+			});
+			$(window).resize(function(e) {
+			  slyelement.obj.reload();
+			});
+		</script>
 	</section>
 	<section id="slider">
 		<div class="mainSlider">			<!-- By Pete R. (peachananr) available in https://github.com/peachananr/immersive-slider -->
@@ -223,7 +206,7 @@
 	</footer>
 </div>
 
-<!-- Scripts Slider -->
+<!-- Google Analitcs (code copy from Slider) -->
 <script>
 	var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];					// Change UA-XXXXX-X to be your site's ID
 	(function(d,t){
