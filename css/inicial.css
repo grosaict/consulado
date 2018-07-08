@@ -18,6 +18,10 @@ body {                                          /* padronizações do body */
   font-size: 10pt;
 }
 
+a {
+  text-decoration: none;                        /* retira o sublinhado padrão do a */
+}
+
 .mainContainer {
   height: 900px;
   width: 1200px;
@@ -85,7 +89,6 @@ header {
    }
 
     #endereco a {
-      text-decoration: none;                    /* retira o sublinhado padrão do a */
       color: black;                             /* troca a cor azul padrão do a */
     }
 
@@ -139,6 +142,12 @@ header {
         color: #FFFFFF;
       }
 
+#carousel {
+  height: 14%;                                  /* 15% da atura do .mainContainer */
+  width: 100%;                                  /* 100% da largura do container */
+  float: left;
+  box-shadow: 0px 0px 8px rgba(0,20,0,5) inset; /* efeito de sombra interna (h-offset v-offset blur color / #001400 é uma variação do verde oficial) */
+}
 #slider {
   height: 60%;                                  /* 60% da atura do .mainContainer */
   width: 100%;                                  /* 100% da largura do container */
@@ -146,13 +155,6 @@ header {
   /* background: url(../imgs/img02-slider-pordosol_680x306.png);
   background-size: cover;                       /* o atributo cover preenche o #slider (CUIDADO PARA NÃO DISTORCER A IMAGEM) 
   background-repeat: no-repeat;                 /* exibe a imagem apenas uma vez, porém não tem efeito por estar ocupando a largura total */
-}
-
-#carousel {
-  height: 14%;                                  /* 15% da atura do .mainContainer */
-  width: 100%;                                  /* 100% da largura do container */
-  float: left;
-background-color: lightblue;           /* ############ APAGAR ESSA LINHA ############ */
 }
 
 #rodape {
