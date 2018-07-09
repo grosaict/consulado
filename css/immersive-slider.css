@@ -6,18 +6,18 @@ Class Definitions
   height: 100%;                                           /* 100% da atura do #slider em inicial.css (linha incluida) */
   width: 100%;                                            /* 100% da largura do #slider em inicial.css (valor original 100%) */
   margin: 0 auto;
-  background: linear-gradient(#332E33, #999999, #332E33); /* valor original #161923   ############ ARRUMAR ISSO AQUI ############### */
+  background: linear-gradient(#FFFFFF, #09BA6D, #006600); /* valor original #161923   ############ ARRUMAR ISSO AQUI ############### */
 }
 
   .sliderContainer {                                      /* valor original page_ontainer */
     height: 100%;
     width: 90%;                                           /* 90% da largura do .mainSlider (valor original 960px) */
-    margin: 60px auto;                                    /* valor original 50px auto */
+    margin: 18px auto;                                    /* valor original 50px auto */
   }
 
     .immersive_slider {
       background: #161923;
-      width: 100%;                                        /* 100% da largura do .sliderContainer (valor original max-width) */
+      width: 100%;                                        /* 100% da largura do .sliderContainer (valor original max-width, que dá no mesmo) */
       height: 480px;
       opacity: .9;
       box-sizing: border-box;

@@ -23,16 +23,16 @@ a {
 }
 
 .mainContainer {
-  height: 1000px;
+  height: 900px;
   width: 1200px;
   margin: auto auto 3px auto;                   /* mantém centralizado com o auto e insere 3px no botton */
   overflow: hidden;                             /* esconde a barra de rolagem */
 }
 
 header {
-  height: 13.5%;                                /* 13.5% da atura do .mainContainer */
-  margin: 2px 2% 2px 2%;                        /* header centralizado com 96% do tamanho do .mainContainer */
-  box-shadow: 0px 0px 30px rgba(0,20,0,5);      /* efeito de sombra no header (h-offset v-offset blur color / #001400 é uma variação do verde oficial) */
+  height: 15%;                                  /* 15% da atura do .mainContainer */
+  margin: 3px 0.4%;                             /* header centralizado com 99.6% do tamanho do .mainContainer */
+  box-shadow: 0px 1px 10px rgba(0,20,0,5);      /* efeito de sombra no header (h-offset v-offset blur color / #001400 é uma variação do verde oficial) */
 }
 
   #logoGov {
@@ -82,36 +82,33 @@ header {
       margin: 3px 16%;                          /* 16% da largura do #pictogramas, utilizando os 32% que sobraram para centralizar (2 x 16) */
     }
 
-  #endereco {
+  #maps {
     height: 100%;                               /* 100% da atura do header */
-    width: 12%;                                 /* 15% da largura do header */
+    width: 12%;                                 /* 12% da largura do header */
     float: right;
    }
 
-    #endereco a {
-      color: black;                             /* troca a cor azul padrão do a */
+    #mapsgroup {
+      height: 70%;
+      margin: 15% auto;                         /* margem superior aplicada no conjunto dos pictogramas */
     }
 
-    #endereco p {
-      text-align: right;
-      margin-right: 6%;
-      font-family: Oswald, sans-serif;          /* fonte com aparência institucional utilizada em https://br.usembassy.gov/pt/ */
+    #mapsgroup img {
+      width: 30%;                               /* 30% da largura do #endereco */
+      margin: 10px 35% 4px 35%;
+    }
+
+    #mapsgroup p {
       font-size: 0.9em;                         /* 90% do tamanho da fonte padrão */
-      font-weight: 500;
-    }
-
-    #endereco p:first-child {
-      margin-top: 10%;
-    }
-
-    #endereco img {
-      width: 18%;                               /* 18% da largura do #endereco */
-      margin-top: 8%;
-      margin-left: 68%;
+      font-weight: 800;                         /* expessura da letra */
+      letter-spacing: 1px;                      /* espaçamento entre letras */
+      text-align: center;
+      text-transform: uppercase;                /* garante sempre maiúsculas */
+      color: black;
     }
 
 #menuPrincipal {
-  height: 4.5%;                                 /* 4.5% da atura do .mainContainer */
+  height: 5%;                                   /* 5% da atura do .mainContainer */
   width: 100%;                                  /* 100% da largura do .mainContainer */
   float: left;
   background-color: #006600;                    /* verde oficial da bandeira portuguesa (vide topo do documento) */
@@ -143,37 +140,40 @@ header {
       }
 
 #carousel {
-  height: 18%;                                  /* 18% da atura do .mainContainer */
+  height: 17%;                                  /* 17% da atura do .mainContainer */
   width: 100%;                                  /* 100% da largura do container */
   float: left;
   box-shadow: 0px 0px 8px rgba(0,20,0,5) inset; /* efeito de sombra interna (h-offset v-offset blur color / #001400 é uma variação do verde oficial) */
 }
 #slider {
-  height: 59%;                                  /* 59% da atura do .mainContainer */
+  height: 57%;                                  /* 57% da atura do .mainContainer */
   width: 100%;                                  /* 100% da largura do container */
   float: left;
-  /* background: url(../imgs/img02-slider-pordosol_680x306.png);
-  background-size: cover;                       /* o atributo cover preenche o #slider (CUIDADO PARA NÃO DISTORCER A IMAGEM) 
-  background-repeat: no-repeat;                 /* exibe a imagem apenas uma vez, porém não tem efeito por estar ocupando a largura total */
 }
 
 #rodape {
-  height: 4.5%;                                 /* 4.5% da atura do .mainContainer */
+  height: 5%;                                   /* 5% da atura do .mainContainer */
   width: 100%;                                  /* 100% da largura do container */
   float: left;
   background-color: #006600;                    /* verde oficial da bandeira portuguesa (vide topo do documento) */
 }
 
-  #rodape a {
-    text-decoration: none;                      /* retira o sublinhado padrão do a */
+  #rodape p {
+      line-height: 15px;
+      font-size: 0.8em;
+      letter-spacing: 2px;
+      color: white;
+   }
+
+  #endereco {
+    float: left;
+    margin: 0.6% 8px;
+    text-align: left;
   }
 
-  #rodape p {
-    line-height: 35px;
-    margin: 0.5% 5px;
-    font-size: 0.7em;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+  #copyright {
+    float: right;
+    margin: 0.6% 8px;
     text-align: right;
-    color: white;
+    text-transform: uppercase;
   }

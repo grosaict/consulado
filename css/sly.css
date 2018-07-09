@@ -6,8 +6,8 @@
 }
 
 .frame .slidee {
-	margin: 1% auto;
-	height: 98%;
+	margin: 1.5% auto;
+	height: 97%;
 	list-style: none;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .frame .slidee li img {							/* linhas incluídas */
-	width: 45%;
+	width: 30%;
 }
 
 .frame .slidee li h3 {							/* linhas incluídas */

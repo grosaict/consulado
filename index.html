@@ -56,14 +56,13 @@
 					<img src="imgs/pic03-contact-mail.png" alt="pic03-contact-mail.png"/></a>
 			</div>
 		</div>
-		<div id="endereco">
-			<a href="https://goo.gl/maps/ZHhmHqygXi12" target="_blank" title="Directions">			<!-- foi incluído tudo dentro do a para 	-->
-				<p>Rua Prof. Annes Dias, 112</p>													<!-- englobar toda a área de click.			-->
-				<p>10º andar - Centro</p>
-				<p>Porto Alegre/RS</p>
-				<p>90.020-090</p>
-				<img src="imgs/pic04-placeholder.png" alt="pic04-placeholder.png"/>
-			</a>
+		<div id="maps">
+			<div id="mapsgroup">
+				<a href="https://goo.gl/maps/ZHhmHqygXi12" target="_blank" title="Directions">			<!-- foi incluído tudo dentro do a para 	-->
+					<img src="imgs/pic04-placeholder.png" alt="pic04-placeholder.png"/>
+					<p>Localização</p>
+				</a>
+			</div>
 		</div>
 	</header>
 	<nav id="menuPrincipal">
@@ -240,7 +239,20 @@
 		<div class="mainSlider">			<!-- By Pete R. (peachananr) available in https://github.com/peachananr/immersive-slider -->
 	      <div class="sliderContainer">
 	        <div id="immersive_slider">
-	          <div class="slide" data-blurred="imgs/img02-slider-algarve_780x470_blured.png" alt="Pôr do Sol Gasômetro">
+	          <div class="slide" data-blurred="imgs/img02-slider-portal_cidadão_701x393_blured.png">
+	            <div class="content">
+	              	<h2><a href="https://www.portaldocidadao.pt" target="_blank">Portal do Cidadão</a></h2>
+	              	<p>Atualmente, o Portal do Cidadão apresenta mais de 1860 serviços, disponibilizados por um total de 592 organismos e entidades públicas.</p>
+	              	<p>Fonte: portaldocidadao.pt</p>
+	            </div>
+	            <div class="image">
+            	  	<a href="https://www.portaldocidadao.pt" target="_blank">
+            	  		<img src="imgs/img02-slider-portal_cidadão_701x393.png"></a>
+	            </div>
+				<a href="#" class="is-prev">&laquo;</a>
+				<a href="#" class="is-next">&raquo;</a>
+	          </div>
+	          <div class="slide" data-blurred="imgs/img03-slider-algarve_780x470_blured.png">
 	            <div class="content">
 	              	<h2><a href="https://www.visitportugal.com" target="_blank">Visite Portugal</a></h2>
 	              	<p>O clima ameno, 3000 horas de sol por ano e 850 km de esplêndidas praias banhadas pelo oceano Atlântico fazem de Portugal um destino perfeito para todas as estações, a poucas horas de viagem de qualquer capital europeia.</p>
@@ -248,22 +260,23 @@
 	            </div>
 	            <div class="image">
 	              	<a href="https://www.visitportugal.com" target="_blank">
-	                	<img src="imgs/img02-slider-algarve_780x470.png" alt="Slider 1">
-	              	</a>
+	                	<img src="imgs/img03-slider-algarve_780x470.png"></a>
 	            </div>
+				<a href="#" class="is-prev">&laquo;</a>
+				<a href="#" class="is-next">&raquo;</a>
 	          </div>
-	          <div class="slide" data-blurred="imgs/img03-slider-pordosol_701x393_blured.png" alt="Pôr do Sol Gasômetro">
+	          <div class="slide" data-blurred="imgs/img04-slider-pordosol_701x393_blured.png">
 	            <div class="content">
 	              	<h2><a href="http://www.visiteportoalegre.com/" target="_blank">Visite Porto Alegre</a></h2>
 	              	<p>Apenas duas horas de voo das principais capitais do Brasil e do MERCOSUL, Porto Alegre consolida sua vocação para receber feiras e congressos de sucesso, aliando cultura, gastronomia e tradições à inovação.</p>
 	              	<p>Fonte: visiteportoalegre.com</p>
 	            </div>
 	            <div class="image">
-            	  	<a href="http://www.visiteportoalegre.com/" target="_blank"> <img src="imgs/img03-slider-pordosol_701x393.png" alt="Pôr do Sol Gasômetro"></a>
+            	  	<a href="http://www.visiteportoalegre.com/" target="_blank">
+            	  		<img src="imgs/img04-slider-pordosol_701x393.png"></a>
 	            </div>
-	          </div>
-	          <a href="#" class="is-prev">&laquo;</a>
-	          <a href="#" class="is-next">&raquo;</a>
+				<a href="#" class="is-prev">&laquo;</a>
+				<a href="#" class="is-next">&raquo;</a>
 	        </div>
 	      </div>
 	  	</div>
@@ -276,8 +289,15 @@
 	    </script>
 	</section>
 	<footer id="rodape">
-		<a href="http://www.senacrs.com.br/unidades.asp?unidade=63" target="_blank">
-			<p>&copy Desenvolvido em parceria com SIP / FsPOA / SENAC-RS</p></a>
+		<div id="endereco">
+			<p>Rua Prof. Annes Dias, 112 | 10º andar | Centro</p>				<!-- englobar toda a área de click.			-->
+			<p>CEP: 90.020-090 | Porto Alegre/RS</p>
+		</div>
+		<div id="copyright">
+			<a href="http://www.senacrs.com.br/unidades.asp?unidade=63" target="_blank">
+				<p>&copy Desenvolvido em parceria com</p>
+				<p>SIP | FsPOA | SENAC-RS</p></a>
+		</div>
 	</footer>
 </div>
 
