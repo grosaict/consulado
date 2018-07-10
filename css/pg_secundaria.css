@@ -1,0 +1,33 @@
+* {                                             /* padronizações da página */
+  margin: 0px;
+  padding: 0px;
+}
+
+body {                                          /* padronizações do body */
+  font-family: 'Source Sans Pro', sans-serif;   /* fonte minimalista utilizada pela Google */
+  font-size: 10pt;
+}
+
+a {
+  text-decoration: none;
+}
+
+#pg_secundaria {
+  float: left;
+  height: 60px;
+  width: 100%;
+  font-size: 1.4em;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #FFFFFF;
+  background-color: #006600;
+  opacity: 0.5;
+}
+
+#pg_secundaria p {
+  text-align: right;
+}
+
+#pg_secundaria p:first-child {
+  text-align: left;
+}

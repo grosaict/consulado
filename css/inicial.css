@@ -47,6 +47,10 @@ header {
       margin: auto 10%;                         /* 10% da largura do #logoGov, utilizando os 20% que sobraram para centralizar (2 x 10) */
     }
 
+  #titulo, #pictogramas, #maps {
+    opacity: 0.8;
+  }
+
   #titulo {
     height: 100%;                               /* 100% da atura do header */       
     width: 70%;                                 /* 70% da largura do header */
@@ -107,11 +111,12 @@ header {
       color: black;
     }
 
-#menuPrincipal {
-  height: 5%;                                   /* 5% da atura do .mainContainer */
-  width: 100%;                                  /* 100% da largura do .mainContainer */
-  float: left;
-  background-color: #006600;                    /* verde oficial da bandeira portuguesa (vide topo do documento) */
+#menuPrincipal, #rodape {
+	height: 5%;                                   /* 5% da atura do .mainContainer */
+	width: 100%;                                  /* 100% da largura do .mainContainer */
+	float: left;
+	background-color: #006600;                    /* verde oficial da bandeira portuguesa (vide topo do documento) */
+	opacity: 0.8;
 }
 
   #menuPrincipal ul {
@@ -151,29 +156,22 @@ header {
   float: left;
 }
 
-#rodape {
-  height: 5%;                                   /* 5% da atura do .mainContainer */
-  width: 100%;                                  /* 100% da largura do container */
-  float: left;
-  background-color: #006600;                    /* verde oficial da bandeira portuguesa (vide topo do documento) */
-}
+	#rodape p {
+      	line-height: 15px;
+      	font-size: 0.8em;
+      	letter-spacing: 2px;
+      	color: white;
+   	}
 
-  #rodape p {
-      line-height: 15px;
-      font-size: 0.8em;
-      letter-spacing: 2px;
-      color: white;
-   }
+  	#endereco {
+    	float: left;
+    	margin: 0.6% 8px;
+    	text-align: left;
+  	}
 
-  #endereco {
-    float: left;
-    margin: 0.6% 8px;
-    text-align: left;
-  }
-
-  #copyright {
-    float: right;
-    margin: 0.6% 8px;
-    text-align: right;
-    text-transform: uppercase;
-  }
+  	#copyright {
+	    float: right;
+	    margin: 0.6% 8px;
+	    text-align: right;
+	    text-transform: uppercase;
+	}

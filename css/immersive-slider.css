@@ -6,7 +6,7 @@ Class Definitions
   height: 100%;                                           /* 100% da atura do #slider em inicial.css (linha incluida) */
   width: 100%;                                            /* 100% da largura do #slider em inicial.css (valor original 100%) */
   margin: 0 auto;
-  background: linear-gradient(#FFFFFF, #09BA6D, #006600); /* valor original #161923   ############ ARRUMAR ISSO AQUI ############### */
+  background: #161923;
 }
 
   .sliderContainer {                                      /* valor original page_ontainer */
