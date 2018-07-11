@@ -13,21 +13,61 @@ a {
 }
 
 #pg_secundaria {
+  z-index: 99;
   float: left;
   height: 60px;
   width: 100%;
-  font-size: 1.4em;
+  position: fixed;
   font-weight: 800;
   letter-spacing: 3px;
-  color: #FFFFFF;
   background-color: #006600;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
-#pg_secundaria p {
-  text-align: right;
+  #pg_secundaria a p {
+    float: left;
+    font-size: 1.4em;
+    padding: 18px;
+    color: #FFFFFF;
+  }
+
+  #pg_secundaria a:nth-child(2) p {
+    float: right;
+    font-size: 1.6em;
+    padding: 16px;
+    text-transform: uppercase;
+  }
+
+  #pg_secundaria img {
+    float: right;
+    height: 100%;
+  }
+
+.container_pg_secundaria {
+  width: 90%;
+  margin: 60px 5%;
+  float: left;
 }
 
-#pg_secundaria p:first-child {
-  text-align: left;
-}
+              /* ######### APAGAR A PARTIR DESSE PONTO E CRIAR UM CSS ESPECIFICO PARA SUA PÁGINA ######### */
+
+  .container_pg_secundaria section {
+    float: left;
+    width: 70%;
+    font-size: 2.85em;
+    background-color: lightblue;
+  }
+
+  .container_pg_secundaria aside {
+    float: left;
+    width: 30%;
+    font-size: 2.65em;
+    background-color: orange;
+  }
+
+  .container_pg_secundaria footer {
+    float: left;
+    width: 100%;
+    font-size: 3em;
+    background-color: yellow;
+  }

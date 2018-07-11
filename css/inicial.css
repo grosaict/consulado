@@ -43,8 +43,8 @@ header {
   }
 
     #logoGov img {
-      width: 80%;                               /* 80% da largura do #logoGov (sobram 20%) */
-      margin: auto 10%;                         /* 10% da largura do #logoGov, utilizando os 20% que sobraram para centralizar (2 x 10) */
+      width: 53%;                               /* 80% da largura do #logoGov (sobram 20%) */
+      margin: 10px 25%;                         /* 10% da largura do #logoGov, utilizando os 20% que sobraram para centralizar (2 x 10) */
     }
 
   #titulo, #pictogramas, #maps {
