@@ -48,26 +48,3 @@ a {
   margin: 60px 5%;
   float: left;
 }
-
-              /* ######### APAGAR A PARTIR DESSE PONTO E CRIAR UM CSS ESPECIFICO PARA SUA PÁGINA ######### */
-
-  .container_pg_secundaria section {
-    float: left;
-    width: 70%;
-    font-size: 2.85em;
-    background-color: lightblue;
-  }
-
-  .container_pg_secundaria aside {
-    float: left;
-    width: 30%;
-    font-size: 2.65em;
-    background-color: orange;
-  }
-
-  .container_pg_secundaria footer {
-    float: left;
-    width: 100%;
-    font-size: 3em;
-    background-color: yellow;
-  }
