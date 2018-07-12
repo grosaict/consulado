@@ -13,38 +13,48 @@ a {
 }
 
 #pg_secundaria {
-  z-index: 99;
-  float: left;
-  height: 60px;
-  width: 100%;
-  position: fixed;
-  font-weight: 800;
-  letter-spacing: 3px;
-  background-color: #006600;
-  opacity: 0.6;
+	z-index: 99;
+	float: left;
+	height: 60px;
+	width: 100%;
+	position: fixed;
+	font-weight: 800;
+	letter-spacing: 3px;
+	background-color: rgba(0, 102, 0, 0.6);
 }
 
-  #pg_secundaria a p {
-    float: left;
-    font-size: 1.4em;
-    padding: 18px;
-    color: #FFFFFF;
-  }
+	#pg_secundaria #vcpoa {
+		float: left;
+		width: 50%;
+		font-size: 1.4em;
+		padding: 18px;
+		color: #FFFFFF;
+	}
 
-  #pg_secundaria a:nth-child(2) p {
-    float: right;
-    font-size: 1.6em;
-    padding: 16px;
-    text-transform: uppercase;
-  }
+	#pg_secundaria #titulo_pagina {
+		float: right;
+		width: 40%;
+		font-size: 1.6em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+	}
 
-  #pg_secundaria img {
-    float: right;
-    height: 100%;
-  }
+	#pg_secundaria #titulo_pagina p {
+		float: right;
+		padding: 16px;
+	}
+
+	#pg_secundaria #titulo_pagina img {
+		float: right;
+		width: 8%;
+		margin: 6px;
+	}
 
 .container_pg_secundaria {
-  width: 90%;
-  margin: 60px 5%;
-  float: left;
+	z-index: 0;
+	position: absolute;
+	top: 61px;
+	float: left;
+	width: 90%;
+	margin: 0 5%;
 }
