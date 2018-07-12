@@ -1,3 +1,12 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-display: 'Source San Pro', sans-serif;
+}
+
 input[type=text], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */  
@@ -25,24 +34,25 @@ input[type=submit]:hover {
 }
 
 .container_pg_secundaria {
-    margin-top: 70px;
+    height: 900px;
+    width: 1575px;
+    margin: auto auto auto auto;
 }
 
 /* Add a background color and some padding around the form */
-#formulario {
-    float: left;
+#formulario {  /* Não consigo jogar pro bottom esse formulário */
+    float: right;
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
     width: 500px;
 }
 
-#mapa, #contatos {
+#mapa {
     float: right;
 }
 
 #contatos {
-    margin-right: 10px;
+    float: right;
+    padding: 5px
 }
-
-
