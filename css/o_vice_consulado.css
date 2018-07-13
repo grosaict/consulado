@@ -1,22 +1,16 @@
   .container_pg_secundaria section {
-    float: center;
-    width: 70%;
-    font-size: 1.85em;
+    float: left;
     background-color: white;
-    color: #800000
+    color: #800000;
   }
 
   .container_pg_secundaria aside {
     float: left;
-    width: 30%;
-    font-size: 1.95em;
-    background-color: orange;
+    font-size: 1.2em;
   }
 
   .container_pg_secundaria footer {
     float: left;
-    width: 100%;
-    font-size: 3em;
-    background-color: yellow;
+    font-size: 1.2em;
   }
   

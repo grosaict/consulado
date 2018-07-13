@@ -130,6 +130,23 @@ header {
       border-right: 1px solid grey;             /* insere uma linha à direita de cada li */
     }
 
+    #menuPrincipal ul li:hover {
+      animation-name: anim_menuPrincipal;   /* nome */
+      animation-duration: 0.1s;               /* duração */
+      animation-timing-function: linear;    /* ritmo da animação */
+      animation-iteration-count: 2;         /* repetição da animação */
+      animation-direction: normal;          /* direção da trajetória da animação */
+    }
+
+    @-webkit-keyframes anim_menuPrincipal {
+        0% {
+            transform: rotate(3deg);
+        }
+        100% {
+            transform: rotate(-3deg); 
+        }
+    }
+
     #menuPrincipal ul li:first-child {
       border-left: 1px solid grey;              /* insere uma linha à esquerda na primeira li */
     }
@@ -150,11 +167,21 @@ header {
   float: left;
   box-shadow: 0px 0px 8px rgba(0,20,0,5) inset; /* efeito de sombra interna (h-offset v-offset blur color / #001400 é uma variação do verde oficial) */
 }
+
+	#carousel .opcoes {
+		text-align:center;						/* Alinhamento de cada item de menu dos Serviços Consulares */
+	}
+
 #slider {
   height: 57%;                                  /* 57% da atura do .mainContainer */
   width: 100%;                                  /* 100% da largura do container */
   float: left;
 }
+
+  #slider .image:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+  }
 
 	#rodape p {
       	line-height: 15px;
