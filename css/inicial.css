@@ -130,23 +130,6 @@ header {
       border-right: 1px solid grey;             /* insere uma linha à direita de cada li */
     }
 
-    #menuPrincipal ul li:hover {
-      animation-name: anim_menuPrincipal;   /* nome */
-      animation-duration: 0.1s;               /* duração */
-      animation-timing-function: linear;    /* ritmo da animação */
-      animation-iteration-count: 2;         /* repetição da animação */
-      animation-direction: normal;          /* direção da trajetória da animação */
-    }
-
-    @-webkit-keyframes anim_menuPrincipal {
-        0% {
-            transform: rotate(3deg);
-        }
-        100% {
-            transform: rotate(-3deg); 
-        }
-    }
-
     #menuPrincipal ul li:first-child {
       border-left: 1px solid grey;              /* insere uma linha à esquerda na primeira li */
     }
@@ -169,7 +152,7 @@ header {
 }
 
 	#carousel .opcoes {
-		text-align:center;						/* Alinhamento de cada item de menu dos Serviços Consulares */
+		text-align:center;						              /* Alinhamento de cada item de menu dos Serviços Consulares */
 	}
 
 #slider {
@@ -202,3 +185,23 @@ header {
 	    text-align: right;
 	    text-transform: uppercase;
 	}
+
+
+                                                                    /* ############# ANIMAÇÃO PADRÃO ############# */
+
+#picgroup img:hover, #mapsgroup:hover, #menuPrincipal ul li:hover, #carousel .opcoes:hover {
+  animation-name: tremer;                   /* nome */
+  animation-duration: 0.1s;                 /* duração */
+  animation-timing-function: linear;        /* ritmo da animação */
+  animation-iteration-count: 2;             /* repetição da animação */
+  animation-direction: normal;              /* direção da trajetória da animação */
+}
+
+@-webkit-keyframes tremer {
+    0% {
+        transform: rotate(3deg);
+    }
+    100% {
+        transform: rotate(-3deg); 
+    }
+}

@@ -1,3 +1,9 @@
+label {
+	font-size: 1.1em;
+	text-shadow: 1px 1px #006600;
+	color: #FFFFFF;
+}
+
 input[type=text], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */  
@@ -11,7 +17,7 @@ input[type=text], select, textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-    background-color: #4CAF50;
+    background-color: #006600;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -21,7 +27,8 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-    background-color: #45a049;
+	color: #006600;
+    background-color: #FFFFFF;
 }
 
 .group {
@@ -49,7 +56,7 @@ input[type=submit]:hover {
         width: 30%;
         padding: 1%;
         border-radius: 5px;
-        background-color: #f2f2f2;
+        background-color: rgba(0, 102, 0, 0.6);
     }
 
 

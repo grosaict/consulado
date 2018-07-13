@@ -29,6 +29,7 @@ a {
 		font-size: 1.4em;
 		padding: 18px;
 		color: #FFFFFF;
+		text-shadow: 2px 2px #006600;
 	}
 
 	#pg_secundaria #titulo_pagina {
@@ -37,6 +38,7 @@ a {
 		font-size: 1.6em;
 		text-transform: uppercase;
 		color: #FFFFFF;
+		text-shadow: 2px 2px #006600;
 	}
 
 	#pg_secundaria #titulo_pagina p {
@@ -46,8 +48,8 @@ a {
 
 	#pg_secundaria #titulo_pagina img {
 		float: right;
-		width: 8%;
-		margin: 6px;
+		width: 7%;
+		margin: 4px;
 	}
 
 .container_pg_secundaria {
