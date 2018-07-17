@@ -1,16 +1,25 @@
-  .container_pg_secundaria section {
-    float: left;
-    background-color: white;
-    color: #800000;
-  }
+.container_pg_secundaria h2 {
+  color: #006600;
+}
 
-  .container_pg_secundaria aside {
-    float: left;
+.container_pg_secundaria p {
+  font-size: 1.2em;
+}
+
+.container_pg_secundaria section, aside {
+  float: left;
+  width: 50%;
+  margin: 20px 0;
+}
+
+
+  .container_pg_secundaria section ul li{
+    margin: 1% 0 0 5%;
+    list-style-type: none;
     font-size: 1.2em;
   }
 
-  .container_pg_secundaria footer {
-    float: left;
-    font-size: 1.2em;
-  }
-  
+.container_pg_secundaria aside {
+  float: right;
+  width: 45%;
+}

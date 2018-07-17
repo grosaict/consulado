@@ -17,8 +17,8 @@ input[type=text], select, textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-    background-color: #006600;
-    color: white;
+    color: #006600;
+    background-color: #FFFFFF;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -27,42 +27,53 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-	color: #006600;
-    background-color: #FFFFFF;
+    color: white;
+    background-color: #006600;
+}
+
+aside {
+    float: left;
+    width: 68%;
+}
+
+h2 {
+    margin: 10px 0;
+    color: #006600;
+}
+
+#formulario {
+    float: left;
+    width: 30%;
+    padding: 1%;
+    border-radius: 5px;
+    background-color: rgba(0, 102, 0, 0.6);
 }
 
 .group {
     display: flex;              /* Quarteto         */
     flex-direction: row;        /* fantástico       */
-    justify-content: center;    /* para alinhamento */
+    justify-content: left;      /* para alinhamento */
     align-items: center;        /* de tags          */
     width: 100%;
     margin: 5px 0;
 }
 
-    #mapa, #contatos {
-        float: left;
-    }
-
-    #mapa {
+    .group #mapa {
         height: 300px;
-        width: 600px;
-        margin-right: 5px;
+        width: 60%;
+        margin: 0 5px;
         border: none;
     }
 
-    #formulario {
-        float: left;
-        width: 30%;
-        padding: 1%;
-        border-radius: 5px;
-        background-color: rgba(0, 102, 0, 0.6);
+    .group #contatos {
+        width: 35%;
     }
 
+    .group #emails {
+        width: 60%;
+    }
 
-                                                                /*  Não é necessário especificar os identificadores:
-                                                                        *
-                                                                        body
-                                                                        .container_pg_secundaria
-                                                                        
-                                                                    pois eles já foram especificados no template padrão pg_secundaria.css */
+        .group #emails p {
+            font-size: 1.2em;
+            margin-left: 5px;
+        }

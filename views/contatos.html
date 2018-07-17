@@ -27,46 +27,61 @@
 		</a>
 	</header>
 	<div class="container_pg_secundaria">												<!-- INCLUIR O CONTEÚDO DENTRO DAS TAG's A PARTIR DESSE PONTO -->
-		<div class="group">
-			<iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13816.206110046114!2d-51.23528988022461!3d-30.035379550000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197907b6228aed%3A0x71485e8a55a2cfc!2sVice-Consulado+de+Portugal+em+Porto+Alegre!5e0!3m2!1spt-BR!2sbr!4v1531337214084" allowfullscreen></iframe>
-			<section id="contatos">
-				<p><span style="font-weight:bold; text-decoration:underline;">Endereço:</span></p>
-				<p>Rua Prof. Annes Dias, 112 , 10º andar - Centro</p>
-				<p>90.020-090 - Porto Alegre - RS</p>
-				<BR/>
-				<p><span style="font-weight:bold; text-decoration:underline;">Atendimento ao público:</span></p>
-				<p>Das 9 às 13 h ( Pessoalmente)</p>
-				<BR/>
-				<p><span style="font-weight:bold; text-decoration:underline;">Telefone:</span> 51 - 3061-5767</p>
-				<BR/>
-				<p><span style="font-weight:bold; text-decoration:underline;">Informações por telefone</span>: Das 14:30 h às 16 h</p>
-				<BR/>
-				<p><span style="font-weight:bold; text-decoration:underline;">Emergência consular - Somente para portugueses:</span></p>
-				<p>+55 51 9181 1745</p>
-				<p>+351 217 929 714</p>
-				<p>+351 961 706 472</p>
-				<p><a data-auto-recognition="true" data-content="gec@mne.pt" href="mailto:gec@mne.pt" data-type="mail">gec@mne.pt</a></p>
-			</section>
-		</div>
-		<div class="group">
-			<section id="formulario">
-				<form action="#">
-					<label for="fname">Nome</label>
-					<input type="text" id="fname" name="firstname" placeholder="Seu nome" required/>
-					<label for="lname">Sobre nome</label>
-					<input type="text" id="lname" name="lastname" placeholder="Seu sobrenome" required/>
-					<label for="country">País</label>
-					<select id="country" name="country">
-						<option value="BR">Brasil</option>
-						<option value="PT">Portugal</option>
-						<option value="00">Outro</option>
-					</select>
-					<label for="subject">Sobre</label>
-					<textarea id="subject" name="subject" placeholder="Escreva algo..."  required style="height:200px"></textarea>
-					<input type="submit" value="Enviar"/>
-				</form>
-			</section>
-		</div>
+		<aside>
+			<h2>Localização:</h2>
+			<div class="group">
+				<iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13816.206110046114!2d-51.23528988022461!3d-30.035379550000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197907b6228aed%3A0x71485e8a55a2cfc!2sVice-Consulado+de+Portugal+em+Porto+Alegre!5e0!3m2!1spt-BR!2sbr!4v1531337214084" allowfullscreen></iframe>
+				<section id="contatos">
+					<p><b>Endereço:</b></p>
+					<p>Rua Prof. Annes Dias, 112 , 10º andar - Centro</p>
+					<p>90.020-090 - Porto Alegre - RS</p>
+					<BR/>
+					<p><b>Atendimento ao público:</b></p>
+					<p>Das 9 às 13 h ( Pessoalmente)</p>
+					<BR/>
+					<p><b>Telefone:</b> 51 - 3061-5767</p>
+					<BR/>
+					<p><b>Informações por telefone</b>: Das 14:30 h às 16 h</p>
+					<BR/>
+					<p><b>Emergência consular - Somente para portugueses:</b></p>
+					<p>+55 51 9181 1745</p>
+					<p>+351 217 929 714</p>
+					<p>+351 961 706 472</p>
+					<p><a data-auto-recognition="true" data-content="gec@mne.pt" href="mailto:gec@mne.pt" data-type="mail">gec@mne.pt</a></p>
+				</section>
+			</div>
+			<br/><br/>
+			<h2>Informações / Dúvidas:</h2>
+			<div class="group">
+				<section id="emails">
+					<p><b>maria.joao@cnpal.dgaccp.pt</b>: nacionalidade portuguesa, transcrição de casamento e de óbito e pedido de certidão de nascimento.</p>
+					<br/>
+					<p><b>volnei.oliveira@cnpal.dgaccp.pt</b>: vistos, reconhecimento de documentos,  recenseamento eleitoral e militar, certificados de vida, de bagagem e de residência.</p>
+					<br/>
+					<p><b>sandra.dutra@cnpal.dgaccp.pt</b>: Passaporte, cartão do cidadão, inscrição consular, titulo de viagem única.</p>
+					<br/>
+					<p><b>mail@cnpal.dgaccp.pt</b>: Outros / diversos.</p>
+				</section>
+			</div>
+		</aside>
+		<h2>Sugestões:</h2>
+		<section id="formulario">
+			<form action="#">
+				<label for="fname">Nome</label>
+				<input type="text" id="fname" name="firstname" placeholder="Seu nome" required/>
+				<label for="lname">Sobrenome</label>
+				<input type="text" id="lname" name="lastname" placeholder="Seu sobrenome" required/>
+				<label for="country">País</label>
+				<select id="country" name="country">
+					<option value="BR">Brasil</option>
+					<option value="PT">Portugal</option>
+					<option value="00">Outro</option>
+				</select>
+				<label for="subject">Sobre</label>
+				<textarea id="subject" name="subject" placeholder="Escreva algo..."  required style="height:200px"></textarea>
+				<input type="submit" value="Enviar"/>
+			</form>
+		</section>
 	</div>
 </body>
 </html>

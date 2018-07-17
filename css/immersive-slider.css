@@ -141,6 +141,7 @@ Class Definitions
   height: 100%;
   left: 0;
   position: relative;
+  filter: blur(5px);                                      /* aplica o efeito borrado na foto de fundo do slider */
 }
 
 .is-container .is-background.gs_cssblur {
